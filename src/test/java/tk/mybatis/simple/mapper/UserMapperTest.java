@@ -6,6 +6,7 @@ import org.junit.Test;
 import tk.mybatis.simple.model.SysRole;
 import tk.mybatis.simple.model.SysUser;
 
+import java.util.Date;
 import java.util.List;
 
 public class UserMapperTest extends BaseMapperTest {
@@ -57,8 +58,15 @@ public class UserMapperTest extends BaseMapperTest {
             SysUser user = new SysUser();
             user.setUserName("test1");
             user.setUserPassword("1234");
-            user.setUserEmail("test1");
+            user.setUserEmail("test1@mybatis.tk");
+            user.setUserInfo("test info");
+            user.setHeadImg(new byte[]{1, 2, 3});
+            user.setCreateTime(new Date());
+            int result = userMapper.insert(user);
+            Assert.assertEquals(1, result);
+            Assert.assertNull(user.getId());
         } finally {
+            sqlSession.rollback();
             sqlSession.close();
         }
     }

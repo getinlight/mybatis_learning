@@ -42,4 +42,13 @@
         where u.id = #{userid}
     </select>
 
+    <insert id="insert">
+        insert into sys_user(
+            id, user_name, user_password, user_email,
+            user_info, head_img, create_time)
+        value (
+            #{id}, #{userName}, #{userPassword}, #{userEmail}, #{userInfo},
+            #{headImg, jdbcType=BLOB}, #{createTime, jdbcType = TIMESTAMP})
+    </insert>
+
 </mapper>
