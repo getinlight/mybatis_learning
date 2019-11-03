@@ -2,34 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95776324-ce1f-421c-8dd3-d2b958d1dd24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/dao/CountryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/dao/SysPrivilegeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/dao/SysRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/dao/SysRolePrivilegeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/dao/SysUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/dao/SysUserRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/dao/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/model/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/model/SysPrivilege.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/model/SysRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/model/SysRolePrivilege.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/model/SysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/model/SysUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/model/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig-country.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/xml/CountryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/xml/SysPrivilegeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/xml/SysRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/xml/SysRolePrivilegeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/xml/SysUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/xml/SysUserRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test/xml/UserInfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/dao/CountryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/dao/SysPrivilegeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/dao/SysRoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/dao/SysRolePrivilegeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/dao/SysUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/dao/SysUserRoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/dao/UserInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/model/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/model/SysPrivilege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/model/SysRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/model/SysRolePrivilege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/model/SysUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/model/SysUserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/model/UserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/model/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/model/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig-country.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/xml/CountryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/xml/SysPrivilegeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/xml/SysRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/xml/SysRolePrivilegeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/xml/SysUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/xml/SysUserRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/xml/UserInfoMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tk/mybatis/simple/mapper/CountryMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tk/mybatis/simple/mapper/CountryMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tk/mybatis/simple/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tk/mybatis/simple/mapper/UserMapperTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,23 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.testUpdateByMap">
-    <configuration name="UserMapperTest.testInsert2Selective" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tk.mybatis.simple.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tk.mybatis.simple.mapper" />
-      <option name="MAIN_CLASS_NAME" value="tk.mybatis.simple.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="testInsert2Selective" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserMapperTest.testSelectUserAndRoleById2">
     <configuration name="UserMapperTest.testInsertList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simple" />
       <extension name="coverage">
@@ -184,7 +170,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.testSelectByIdOrUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserMapperTest.testSelectUserAndRoleById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simple" />
       <extension name="coverage">
         <pattern>
@@ -194,7 +180,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="tk.mybatis.simple.mapper" />
       <option name="MAIN_CLASS_NAME" value="tk.mybatis.simple.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="testSelectByIdOrUserName" />
+      <option name="METHOD_NAME" value="testSelectUserAndRoleById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.testSelectUserAndRoleById2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tk.mybatis.simple.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tk.mybatis.simple.mapper" />
+      <option name="MAIN_CLASS_NAME" value="tk.mybatis.simple.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="testSelectUserAndRoleById2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -218,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserMapperTest.testSelectUserAndRoleById2" />
+        <item itemvalue="JUnit.UserMapperTest.testSelectUserAndRoleById" />
         <item itemvalue="JUnit.UserMapperTest.testUpdateByMap" />
         <item itemvalue="JUnit.UserMapperTest.testInsertList" />
         <item itemvalue="JUnit.UserMapperTest.testSelectByIdList" />
-        <item itemvalue="JUnit.UserMapperTest.testSelectByIdOrUserName" />
-        <item itemvalue="JUnit.UserMapperTest.testInsert2Selective" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +261,7 @@
       <workItem from="1572589363448" duration="535000" />
       <workItem from="1572589921405" duration="444000" />
       <workItem from="1572590385960" duration="10454000" />
-      <workItem from="1572691826964" duration="18787000" />
+      <workItem from="1572691826964" duration="20060000" />
     </task>
     <servers />
   </component>

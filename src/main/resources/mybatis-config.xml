@@ -4,11 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-    <databaseIdProvider type="DB_CENDOR">
-        <property name="MySQL" value="mysql"/>
-        <property name="DB2" value="db2"/>
-    </databaseIdProvider>
-
     <settings>
         <setting name="logImpl" value="LOG4J"/>
         <setting name="mapUnderscoreToCamelCase" value="true"/>
