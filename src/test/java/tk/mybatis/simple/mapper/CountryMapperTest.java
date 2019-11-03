@@ -6,6 +6,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import test.dao.CountryMapper;
 import tk.mybatis.simple.model.Country;
 
 import java.io.IOException;
@@ -29,6 +30,14 @@ public class CountryMapperTest extends BaseMapperTest {
         for (Country country: list) {
             System.out.printf("%-4d%4s%4s\n",
                     country.getId(), country.getCountryname(), country.getCountrycode());
+        }
+    }
+
+    @Test
+    public void testExample() {
+        SqlSession sqlSession = getSqlSession();
+        try {
+            CountryMapper countryMapper = sqlSession.getMapper()
         }
     }
 
