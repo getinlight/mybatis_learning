@@ -44,9 +44,9 @@ public interface RoleMapper {
     int insert3(SysRole sysRole);
 
     @Update({"update sys_role",
-            "set role_name = #{roleName}",
-            "enabled = #{enabled}",
-            "create_by = #{createBy}",
+            "set role_name = #{roleName},",
+            "enabled = #{enabled},",
+            "create_by = #{createBy},",
             "create_time = #{createTime, jdbcType = TIMESTAMP}",
             "where id = #{id}"})
     int updateById(SysRole sysRole);
@@ -55,5 +55,7 @@ public interface RoleMapper {
     int deleteById(Long id);
 
     List<SysRole> selectAllRoleAndPrivileges();
+
+    List<SysRole> selectRoleByUserIdChoose(Long userId);
 
 }

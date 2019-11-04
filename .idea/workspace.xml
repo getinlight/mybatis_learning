@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="95776324-ce1f-421c-8dd3-d2b958d1dd24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/PrivilegeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/PrivilegeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/PrivilegeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/PrivilegeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tk/mybatis/simple/mapper/RoleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tk/mybatis/simple/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tk/mybatis/simple/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tk/mybatis/simple/mapper/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tk/mybatis/simple/mapper/RoleMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tk/mybatis/simple/mapper/RoleMapperTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.testSelectAllUserAndRolesSelect">
+  <component name="RunManager" selected="JUnit.RoleMapperTest.testSelectRoleByUserIdChoose">
     <configuration name="RoleMapperTest.testSelectAllRoleAndPrivileges" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simple" />
       <extension name="coverage">
@@ -121,6 +118,22 @@
       <option name="PACKAGE_NAME" value="tk.mybatis.simple.mapper" />
       <option name="MAIN_CLASS_NAME" value="tk.mybatis.simple.mapper.RoleMapperTest" />
       <option name="METHOD_NAME" value="testSelectAllRoleAndPrivileges" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleMapperTest.testSelectRoleByUserIdChoose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tk.mybatis.simple.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tk.mybatis.simple.mapper" />
+      <option name="MAIN_CLASS_NAME" value="tk.mybatis.simple.mapper.RoleMapperTest" />
+      <option name="METHOD_NAME" value="testSelectRoleByUserIdChoose" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,22 +171,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.testSelectUserAndRoleById2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tk.mybatis.simple.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tk.mybatis.simple.mapper" />
-      <option name="MAIN_CLASS_NAME" value="tk.mybatis.simple.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="testSelectUserAndRoleById2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserMapperTest.testSelectUserAndRoleByIdSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simple" />
       <extension name="coverage">
@@ -192,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoleMapperTest.testSelectRoleByUserIdChoose" />
         <item itemvalue="JUnit.UserMapperTest.testSelectAllUserAndRolesSelect" />
         <item itemvalue="JUnit.UserMapperTest.testSelectAllUserAndRoles" />
         <item itemvalue="JUnit.RoleMapperTest.testSelectAllRoleAndPrivileges" />
         <item itemvalue="JUnit.UserMapperTest.testSelectUserAndRoleByIdSelect" />
-        <item itemvalue="JUnit.UserMapperTest.testSelectUserAndRoleById2" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +233,7 @@
       <workItem from="1572691826964" duration="20060000" />
       <workItem from="1572828561482" duration="12246000" />
       <workItem from="1572846091742" duration="57000" />
-      <workItem from="1572846162113" duration="3202000" />
+      <workItem from="1572846162113" duration="4672000" />
     </task>
     <servers />
   </component>
@@ -269,8 +266,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tk/mybatis/simple/mapper/RoleMapperTest.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="15" />
+          <line>64</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
