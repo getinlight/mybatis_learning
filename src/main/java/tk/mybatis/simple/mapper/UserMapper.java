@@ -55,5 +55,7 @@ public interface UserMapper {
 
     List<SysUser> selectAllUserAndRoles();
 
+    SysUser selectAllUserAndRolesSelect(Long id);
+
 }
 

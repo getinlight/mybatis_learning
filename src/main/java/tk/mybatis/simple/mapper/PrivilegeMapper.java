@@ -1,5 +1,6 @@
 package tk.mybatis.simple.mapper;
 
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.SelectProvider;
 import tk.mybatis.simple.model.SysPrivilege;
 
