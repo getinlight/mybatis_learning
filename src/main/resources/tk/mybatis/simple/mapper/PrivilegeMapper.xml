@@ -11,7 +11,7 @@
     <select id="selectPrivilegeByRoleId" resultMap="privilegeMap">
         select p.*
         from sys_privilege p
-        inner join sys_role_privilege rp on rp.privilege = p.id
+        inner join sys_role_privilege rp on rp.privilege_id = p.id
         where role_id = #{roleId}
     </select>
 
