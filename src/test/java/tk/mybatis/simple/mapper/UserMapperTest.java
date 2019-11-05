@@ -404,4 +404,61 @@ public class UserMapperTest extends BaseMapperTest {
         }
     }
 
+    @Test
+    public void testSelectUserById() {
+        SqlSession sqlSession = getSqlSession();
+        try {
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            SysUser user = new SysUser();
+            user.setId(1L);
+            userMapper.selectUserById(user);
+            Assert.assertNotNull(user.getUserName());
+            System.out.println("用户名："+user.getUserName());
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+    @Test
+    public void testSelectUserPage() {
+        SqlSession sqlSession = getSqlSession();
+        try {
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            Map<String, Object> params = new HashMap<String, Object>();
+            params.put("userName", "ad");
+            params.put("offset", 0);
+            params.put("limit", 10);
+            List<SysUser> userList = userMapper.selectUserPage(params);
+            Long total = (Long) params.get("total");
+            System.out.println("总数："+total);
+            for (SysUser user : userList) {
+                System.out.println("用户名："+user.getUserName());
+            }
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+    @Test
+    public void testInsertUserAndRoles() {
+        SqlSession sqlSession = getSqlSession();
+        try {
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            SysUser user = new SysUser();
+            user.setUserName("test1");
+            user.setUserPassword("1234");
+            user.setUserEmail("test@mybatis.tk");
+            user.setUserInfo("test info");
+            user.setHeadImg(new byte[]{1,2,3});
+            userMapper.insertUserAndRoles(user, "1,2");
+            Assert.assertNotNull(user.getId());
+            Assert.assertNotNull(user.getCreateTime());
+            sqlSession.commit();
+            userMapper.deleteUserById(user.getId());
+            sqlSession.commit();
+        } finally {
+            sqlSession.close();
+        }
+    }
+
 }
