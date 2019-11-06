@@ -1,19 +1,31 @@
 package tk.mybatis.simple.model;
 
+import tk.mybatis.simple.type.Enabled;
+
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class SysRole {
+public class SysRole implements Serializable {
 
+    private static final long serialVersionUID = 4425253586907623123L;
     private Long id;
     private String roleName;
-    private Integer enabled;
+    private Enabled enabled;
     private Long createBy;
     private Date createTime;
 
     private SysUser user;
 
     private CreateInfo createInfo;
+
+    public Enabled getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Enabled enabled) {
+        this.enabled = enabled;
+    }
 
     public CreateInfo getCreateInfo() {
         return createInfo;
@@ -55,14 +67,6 @@ public class SysRole {
 
     public void setRoleName(String roleName) {
         this.roleName = roleName;
-    }
-
-    public Integer getEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(Integer enabled) {
-        this.enabled = enabled;
     }
 
     public Long getCreateBy() {

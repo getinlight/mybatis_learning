@@ -5,6 +5,7 @@ import tk.mybatis.simple.model.SysRole;
 
 import java.util.List;
 
+@CacheNamespaceRef(RoleMapper.class)
 public interface RoleMapper {
 
     @Select({"select id,role_name,enabled,create_by,create_time ",

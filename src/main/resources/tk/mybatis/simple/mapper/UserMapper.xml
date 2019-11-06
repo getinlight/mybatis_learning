@@ -2,6 +2,13 @@
         <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                 "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="tk.mybatis.simple.mapper.UserMapper">
+
+    <cache
+        eviction="FIFO"
+        flushInterval="60000"
+        size="512"
+        readOnly="false"/>
+
     <resultMap id="userMap" type="tk.mybatis.simple.model.SysUser">
         <id property="id" column="id"/>
         <result property="userName" column="user_name"/>
@@ -34,7 +41,7 @@
                     column="{userId=id}"/>
     </resultMap>
 
-    <select id="selectById" resultMap="userMap">
+    <select id="selectById" flushCache="true" resultMap="userMap">
         select * from sys_user where id = #{id}
     </select>
 

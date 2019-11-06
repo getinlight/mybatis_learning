@@ -160,22 +160,22 @@ public class UserMapperTest extends BaseMapperTest {
         }
     }
 
-    @Test
-    public void testselectRolesByUserAndRole() {
-        SqlSession sqlSession = getSqlSession();
-        try {
-            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-            SysUser user = new SysUser();
-            user.setId(1L);
-            SysRole role = new SysRole();
-            role.setEnabled(1);
-            List<SysRole> roleList = userMapper.selectRolesByUserAndRole(user, role);
-            Assert.assertNotNull(roleList);
-            Assert.assertTrue(roleList.size() > 0);
-        } finally {
-            sqlSession.close();
-        }
-    }
+//    @Test
+//    public void testselectRolesByUserAndRole() {
+//        SqlSession sqlSession = getSqlSession();
+//        try {
+//            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+//            SysUser user = new SysUser();
+//            user.setId(1L);
+//            SysRole role = new SysRole();
+//            role.setEnabled(1);
+//            List<SysRole> roleList = userMapper.selectRolesByUserAndRole(user, role);
+//            Assert.assertNotNull(roleList);
+//            Assert.assertTrue(roleList.size() > 0);
+//        } finally {
+//            sqlSession.close();
+//        }
+//    }
 
     @Test
     public void testSelectByUser() {
