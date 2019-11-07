@@ -68,4 +68,48 @@ public class CacheTest extends BaseMapperTest {
 
     }
 
+    @Test
+    public void testDirtyData() {
+        SqlSession sqlSession = getSqlSession();
+        try { // user 1001
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            SysUser user = userMapper.selectUserAndRoleById(1001L);
+            Assert.assertEquals("普通用户", user.getRole().getRoleName());
+            System.out.println("角色名："+user.getRole().getRoleName());
+        } finally {
+            sqlSession.close();
+        }
+
+        System.out.println("开启新的sqlsession");
+        sqlSession = getSqlSession();
+        try { // role 2
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            SysRole role = roleMapper.selectById(2L);
+            role.setRoleName("脏数据");
+            roleMapper.updateById(role);
+            sqlSession.commit();
+        } finally {
+            sqlSession.close();
+        }
+
+        System.out.println("开启新的sqlsession");
+        sqlSession = getSqlSession();
+        try {
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
+            SysUser user = userMapper.selectUserAndRoleById(1001L);
+            SysRole role = roleMapper.selectById(2L);
+            // 已经修改role为脏数据 这里用户角色应该为脏数据
+            Assert.assertEquals("普通用户",user.getRole().getRoleName());
+            Assert.assertEquals("脏数据", role.getRoleName());
+            System.out.println("角色名："+user.getRole().getRoleName());
+            role.setRoleName("普通用户");
+            roleMapper.updateById(role);
+            sqlSession.commit();
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+
 }

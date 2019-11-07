@@ -1,10 +1,13 @@
 package tk.mybatis.simple.model;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-public class SysUser {
+public class SysUser implements Serializable {
+
+    private static final long serialVersionUID = -7123947859901584458L;
 
     private Long id;
     private String userName;

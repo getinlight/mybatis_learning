@@ -3,11 +3,8 @@
                 "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="tk.mybatis.simple.mapper.UserMapper">
 
-    <cache
-        eviction="FIFO"
-        flushInterval="60000"
-        size="512"
-        readOnly="false"/>
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
+    <cache-ref namespace="tk.mybatis.simple.mapper.RoleMapper"/>
 
     <resultMap id="userMap" type="tk.mybatis.simple.model.SysUser">
         <id property="id" column="id"/>
